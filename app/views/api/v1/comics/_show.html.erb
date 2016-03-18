@@ -1,0 +1,4 @@
+<% for panel in @comic.panels %>
+   <%= image_tag panel.image.url(:medium), class: 'img-responsive' %>
+   <%= render :partial => 'api/v1/panels/caption' %>
+<% end %>

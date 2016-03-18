@@ -1,0 +1,7 @@
+<div class="form-wrapper">
+  <%= simple_form_for @panel, html: { class: 'form-inline', multipart: true } do |f| %>
+    <div class="form-group text-center">
+      <%= f.input :caption, placeholder: 'Write Caption' %>
+    </div>
+  <% end %>
+</div>
